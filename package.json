@@ -1,0 +1,42 @@
+{
+  "name": "npm-react-mao",
+  "version": "1.0.2",
+  "description": "component",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "pages": "npm run build && npm run deploy",
+    "publish": "npm run build && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "react"
+  ],
+  "author": "maoqinqin",
+  "license": "ISC",
+  "homepage": "https://github.com/maoqinqin/npm-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maoqinqin/npm-react.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "gh-pages": "^2.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
